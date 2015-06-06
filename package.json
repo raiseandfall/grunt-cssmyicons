@@ -1,14 +1,9 @@
 {
-  "name": "cssmyicons",
+  "name": "grunt-cssmyicons",
   "version": "0.1.0",
-  "description": "CSS My Icons",
-  "main": "index.js",
+  "description": "Grunt task to generate a CSS for SVG icons",
   "scripts": {
-    "hint": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js",
-    "dev": "npm run watch",
-    "test": "mocha test/*.js",
-    "watch": "watchify **/*.js -o 'npm run hint && npm run test'",
-    "build:js": "npm run hint"
+    "test": "grunt test"
   },
   "engines": {
     "node": ">=0.10.x"

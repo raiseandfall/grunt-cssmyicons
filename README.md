@@ -24,6 +24,19 @@ grunt.initConfig({
 });
 ```
 
+### OPTIONS
+
+#### src
+Type: `Array`
+
+This option is the glob of the svg folders.
+
+#### dest
+Type: `String`
+
+Path to the CSS file to export to.
+
+
 ## CONTRIBUTE
 ```shell
 $ grunt

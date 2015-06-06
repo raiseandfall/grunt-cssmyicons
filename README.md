@@ -2,7 +2,9 @@
 
 > Grunt task to generate a CSS file for SVG icons used as background-image:
 
-```.icon-home{background-image:url('icons/home.svg');background:no-repeat;}```
+```css
+.icon-home{background-image:url('icons/home.svg');background:no-repeat;}
+```
 
 ## INSTALL
 

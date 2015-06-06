@@ -1,7 +1,8 @@
 # CSS my icons
 
-> Grunt task to generate a CSS file for SVG icons used as background-image: 
-> ```.icon-home{background-image:url('icons/home.svg');background:no-repeat;}```
+> Grunt task to generate a CSS file for SVG icons used as background-image:
+
+```.icon-home{background-image:url('icons/home.svg');background:no-repeat;}```
 
 ## INSTALL
 
@@ -13,7 +14,7 @@ $ npm install grunt-cssmyicons
 ```javascript
 grunt.initConfig({
   cssmyicons: {
-      main: {
+    main: {
       src: ['assets/svg'],
       dest: 'styles/icons.css'
     }

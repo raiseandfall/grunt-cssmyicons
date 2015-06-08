@@ -9,6 +9,7 @@ module.exports = function(grunt) {
     var glob = this.data.src[0] += '/*.svg';
     var icons = '';
     var cssDest = this.data.dest;
+    var prefixPath = this.data.prefixPath || '';
 
     try {
       globby(glob, {}, function(err, files) {
@@ -22,7 +23,7 @@ module.exports = function(grunt) {
           var path = el.split('/'),
             file = path[path.length-1].split('.'),
             filename = file[0];
-          icons += '.icon-' + filename + '{background-image: url("' + el + '");background-repeat:no-repeat;} ';
+          icons += '.icon-' + filename + '{background-image: url("' + prefixPath + el + '");background-repeat:no-repeat;}';
 
           grunt.log.writeln(chalk.green('✔ ') + el);
         });

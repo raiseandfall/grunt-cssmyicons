@@ -18,7 +18,8 @@ module.exports = function(grunt) {
     cssmyicons: {
       main: {
         src: ['test/fixtures/assets/svg'],
-        dest: 'tmp/icons.css'
+        dest: 'tmp/icons.css',
+        prefixPath: '/'
       }
     },
 

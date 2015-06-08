@@ -36,6 +36,12 @@ Type: `String`
 
 Path to the CSS file to export to.
 
+#### prefixPath
+Type: `String`
+Default: ```''```
+
+Prefix to add to the path of the SVG files.   
+Exemple: ```'/'``` if you want every file asset path to look like ```/assets/icon.svg``` instead of ```assets.icon.svg```. 
 
 ## CONTRIBUTE
 ```shell

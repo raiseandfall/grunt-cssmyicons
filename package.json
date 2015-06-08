@@ -17,6 +17,9 @@
     "type": "git",
     "url": "git@github.com:raiseandfall/cssmyicons.git"
   },
+  "bugs": {
+    "url": "https://github.com/raiseandfall/grunt-cssmyicons/issues"
+  },
   "devDependencies": {
     "fs-extra": "^0.18.4",
     "grunt": "^0.4.5",

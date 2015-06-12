@@ -6,6 +6,8 @@
 .icon-home{background-image:url('icons/home.svg');background:no-repeat;}
 ```
 
+## [CHANGELOG](./CHANGELOG.md)
+
 ## INSTALL
 
 ```shell

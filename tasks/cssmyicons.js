@@ -5,11 +5,13 @@ module.exports = function(grunt) {
   var globby = require('globby'),
     chalk = require('chalk');
 
-  grunt.registerMultiTask('cssmyicons', 'CSS my icons.', function() {
-    var glob = this.data.src[0] += '/*.svg';
+   grunt.registerMultiTask('cssmyicons', 'CSS my icons.', function() {
+    var glob = this.data.src[0];
     var icons = '';
-    var cssDest = this.data.dest;
-    var prefixPath = this.data.prefixPath || '';
+    var cwd = (!!this.data.cwd ? this.data.cwd + '/' : '');
+    var cssDest = cwd + this.data.destCss;
+    var moveIcons = !!this.data.destIcons;
+    var destIcons = this.data.destIcons;
 
     try {
       globby(glob, {}, function(err, files) {
@@ -21,9 +23,19 @@ module.exports = function(grunt) {
         files.forEach(function(el) {
           // Path
           var path = el.split('/'),
+            filename = path[path.length-1],
             file = path[path.length-1].split('.'),
-            filename = file[0];
-          icons += '.icon-' + filename + '{background-image: url("' + prefixPath + el + '");background-repeat:no-repeat;}';
+            fileFullPath = path.slice(0,path.length-1).join('/') + '/' + filename,
+            filenameNoExt = file[0],
+            relativePath = moveIcons ? destIcons + '/' + filename : el;
+
+          // Copy file if requested
+          if (moveIcons) {
+            var destFullPath = cwd + destIcons + '/' + filename;
+            grunt.file.copy(fileFullPath, destFullPath);
+          }
+
+          icons += '.icon-' + filenameNoExt + '{background-image:url("' + relativePath + '");background-repeat:no-repeat;}';
 
           grunt.log.writeln(chalk.green('✔ ') + el);
         });

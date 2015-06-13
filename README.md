@@ -26,24 +26,47 @@ grunt.initConfig({
 });
 ```
 
-### OPTIONS
+## OPTIONS
 
 #### src
-Type: `Array`
+Type: `Array` 
+_Required_
 
 This option is the glob of the svg folders.
 
-#### dest
-Type: `String`
+#### destCSS
+Type: `String` 
+_Required_
 
 Path to the CSS file to export to.
 
-#### prefixPath
-Type: `String`
-Default: ```''```
+#### destIcons
+Type: `String` 
+_Optional_
 
-Prefix to add to the path of the SVG files.   
-Exemple: ```'/'``` if you want every file asset path to look like ```/assets/icon.svg``` instead of ```assets.icon.svg```. 
+Folder to copy icons files.
+
+#### cwd
+Type: `String` 
+Default: Current working directory 
+_Optional_
+
+Used as a working directory for CSS & icons exports. 
+
+
+## EXAMPLE 
+```javascript
+cssmyicons: {
+    copyIcons: {
+        src: ['test/fixtures/*'],
+        cwd: 'tmp/copyIcons',
+        destIcons: 'icons',
+        destCss: 'icons.css'
+    }
+}
+```
+
+In this case the icons will be copied to ```tmp/copyIcons/icons```, the CSS file will be generated here: ```tmp/copyIcons/icons.css``` and the base path for the background-image will be ```background-image:url("icons/icon.svg")```.
 
 ## CONTRIBUTE
 ```shell

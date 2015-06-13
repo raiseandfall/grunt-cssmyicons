@@ -3,10 +3,18 @@
 var grunt = require('grunt');
 
 exports.cssmyicons = {
-  main: function(test) {
+  simple: function(test) {
     test.expect(1);
 
-    test.deepEqual(grunt.file.read('tmp/icons.css'), grunt.file.read('test/fixtures/style/icons.css'), 'file should be equal');
+    test.deepEqual(grunt.file.read('tmp/simple/icons.css'), grunt.file.read('test/mocks/simple/icons.css'), 'CSS stylesheets should be equal');
+
+    test.done();
+  },
+  copyIcons: function(test) {
+    test.expect(2);
+
+    test.deepEqual(grunt.file.read('tmp/copyIcons/icons.css'), grunt.file.read('test/mocks/copyIcons/icons.css'), 'CSS stylesheets should be equal');
+    test.deepEqual(grunt.file.read('tmp/copyIcons/icons/overlay-close.svg'), grunt.file.read('test/mocks/copyIcons/icons/overlay-close.svg'), 'SVG should have been copied');
 
     test.done();
   }

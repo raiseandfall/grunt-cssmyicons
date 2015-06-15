@@ -1,4 +1,4 @@
-# CSS my icons
+# CSS my icons  [![Build Status](https://travis-ci.org/raiseandfall/grunt-cssmyicons.svg)](https://travis-ci.org/raiseandfall/grunt-cssmyicons)
 
 > Grunt task to generate a CSS file for SVG icons used as background-image:
 

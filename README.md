@@ -72,3 +72,8 @@ In this case the icons will be copied to ```tmp/copyIcons/icons```, the CSS file
 ```shell
 $ grunt
 ```
+
+##### Run tests  
+```shell
+$ grunt test
+```

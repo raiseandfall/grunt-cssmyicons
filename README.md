@@ -20,7 +20,7 @@ grunt.initConfig({
   cssmyicons: {
     main: {
       src: ['assets/svg'],
-      dest: 'styles/icons.css'
+      destCss: 'styles/icons.css'
     }
   }
 });
@@ -34,7 +34,7 @@ _Required_
 
 This option is the glob of the svg folders.
 
-#### destCSS
+#### destCss
 Type: `String` 
 _Required_
 

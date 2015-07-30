@@ -9,6 +9,12 @@ module.exports = function(grunt) {
     var glob = this.data.src[0];
     var icons = '';
     var cwd = (!!this.data.cwd ? this.data.cwd + '/' : '');
+
+    if (!this.data.destCss) {
+      grunt.log.error('`destCss` is not defined');
+      return false;
+    }
+
     var cssDest = cwd + this.data.destCss;
     var prefixPath = this.data.prefixPath || '';
     var moveIcons = !!this.data.destIcons;
@@ -48,8 +54,7 @@ module.exports = function(grunt) {
       });
 
     } catch (e) {
-      grunt.log.error();
-      grunt.fail.warn('Unable to create "' + cssDest + '" file (' + e.message + ').', e);
+      grunt.log.error('Unable to create "' + cssDest + '" file (' + e.message + ').', e);
     }
 
   });

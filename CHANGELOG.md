@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.1.1
+- Added check on options
+
 ## v1.1.0
 - Added `prefixPath` option to let users add a prefix to the icons path
 

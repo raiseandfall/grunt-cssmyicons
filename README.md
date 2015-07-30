@@ -29,34 +29,34 @@ grunt.initConfig({
 ## OPTIONS
 
 #### src
-Type: `Array` 
-_Required_
+Type: `Array`  
+_Required_  
 
 This option is the glob of the svg folders.
 
 #### destCss
-Type: `String` 
-_Required_
+Type: `String`  
+_Required_  
 
 Path to the CSS file to export to.
 
 #### destIcons
-Type: `String` 
-_Optional_
+Type: `String`  
+_Optional_  
 
 Folder to copy icons files.
 
 #### cwd
-Type: `String` 
-Default: Current working directory 
-_Optional_
+Type: `String`  
+Default: Current working directory  
+_Optional_  
 
 Used as a working directory for CSS & icons exports. 
 
 #### prefixPath
 Type: `String`  
-Default: null
-_Optional_
+Default: null  
+_Optional_  
 
 Prefix to add at the beginning of the icons path
 

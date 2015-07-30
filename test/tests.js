@@ -10,6 +10,13 @@ exports.cssmyicons = {
 
     test.done();
   },
+  simpleWithPrefix: function(test) {
+    test.expect(1);
+
+    test.deepEqual(grunt.file.read('tmp/simpleWithPrefix/icons.css'), grunt.file.read('test/mocks/simpleWithPrefix/icons.css'), 'CSS stylesheets should be equal');
+
+    test.done();
+  },
   copyIcons: function(test) {
     test.expect(2);
 

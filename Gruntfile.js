@@ -20,6 +20,11 @@ module.exports = function(grunt) {
         src: ['test/fixtures/*'],
         destCss: 'tmp/simple/icons.css'
       },
+      simpleWithPrefix: {
+        src: ['test/fixtures/*'],
+        destCss: 'tmp/simpleWithPrefix/icons.css',
+        prefixPath: 'http://cdn.mywebsite.com/'
+      },
       copyIcons: {
         src: ['test/fixtures/*'],
         cwd: 'tmp/copyIcons',

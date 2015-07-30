@@ -10,6 +10,7 @@ module.exports = function(grunt) {
     var icons = '';
     var cwd = (!!this.data.cwd ? this.data.cwd + '/' : '');
     var cssDest = cwd + this.data.destCss;
+    var prefixPath = this.data.prefixPath || '';
     var moveIcons = !!this.data.destIcons;
     var destIcons = this.data.destIcons;
 
@@ -27,7 +28,7 @@ module.exports = function(grunt) {
             file = path[path.length-1].split('.'),
             fileFullPath = path.slice(0,path.length-1).join('/') + '/' + filename,
             filenameNoExt = file[0],
-            relativePath = moveIcons ? destIcons + '/' + filename : el;
+            relativePath = prefixPath + (moveIcons ? destIcons + '/' + filename : el);
 
           // Copy file if requested
           if (moveIcons) {

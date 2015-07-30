@@ -53,6 +53,13 @@ _Optional_
 
 Used as a working directory for CSS & icons exports. 
 
+#### prefixPath
+Type: `String`  
+Default: null
+_Optional_
+
+Prefix to add at the beginning of the icons path
+
 
 ## EXAMPLE 
 ```javascript

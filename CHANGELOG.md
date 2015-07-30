@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.1.0
+- Added `prefixPath` option to let users add a prefix to the icons path
+
 ## v1.0.0
 - Re-structured the plugin to include copy of icons files & use of cwd
 

@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.1.2
+- Added keywords to npm package config
+
 ## v1.1.1
 - Added check on options
 

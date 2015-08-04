@@ -1,6 +1,6 @@
 {
   "name": "grunt-cssmyicons",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Grunt task to generate a CSS for SVG icons",
   "scripts": {
     "test": "grunt test"

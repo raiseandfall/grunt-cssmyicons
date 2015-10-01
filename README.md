@@ -6,6 +6,8 @@
 .icon-home{background-image:url('icons/home.svg');background:no-repeat;}
 ```
 
+> There are also versions for [Grunt](https://github.com/raiseandfall/grunt-cssmyicons) and [Gulp](https://github.com/raiseandfall/gulp-cssmyicons)
+
 ## [CHANGELOG](./CHANGELOG.md)
 
 ## INSTALL

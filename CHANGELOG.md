@@ -1,7 +1,10 @@
 # CHANGELOG
 
+## v1.1.3
+- [DOC] Added links to Gulp & broccoli versions
+
 ## v1.1.2
-- Added keywords to npm package config
+- [DOC] Added keywords to npm package config
 
 ## v1.1.1
 - Added check on options

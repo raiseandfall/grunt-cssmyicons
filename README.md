@@ -86,3 +86,6 @@ $ grunt
 ```shell
 $ grunt test
 ```
+
+## LICENSE 
+MIT

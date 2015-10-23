@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.1.4
+- [TEST] Added travis suppor for 4.0 & 4.2 nodeJS versions
+- [CONFIG] Added license file
+
 ## v1.1.3
 - [DOC] Added links to Gulp & broccoli versions
 

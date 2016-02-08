@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.1.5
+- [TEST] Added node 5.0 & 5.5 on travis config
+
 ## v1.1.4
 - [TEST] Added travis suppor for 4.0 & 4.2 nodeJS versions
 - [CONFIG] Added license file

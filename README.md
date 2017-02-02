@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/raiseandfall/grunt-cssmyicons.svg)](https://travis-ci.org/raiseandfall/grunt-cssmyicons)
 
-> Grunt task to generate a CSS file for SVG icons used as background-image:
+> Grunt plugin to generate a CSS file for SVG icons used as background-image:
 
 ```css
 .icon-home{background-image:url('icons/home.svg');background:no-repeat;}

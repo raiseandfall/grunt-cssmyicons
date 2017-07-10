@@ -1,6 +1,6 @@
 # CSS my icons  
 
-[![Build Status](https://travis-ci.org/raiseandfall/grunt-cssmyicons.svg)](https://travis-ci.org/raiseandfall/grunt-cssmyicons)
+[![Build Status](https://travis-ci.org/raiseandfall/grunt-cssmyicons.svg)](https://travis-ci.org/raiseandfall/grunt-cssmyicons) [![Downloads](https://img.shields.io/npm/dt/grunt-cssmyicons.svg)](https://www.npmjs.com/package/grunt-cssmyicons)
 
 > Grunt plugin to generate a CSS file for SVG icons used as background-image:
 
